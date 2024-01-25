@@ -30,7 +30,7 @@ int main() {
   if (g_strstr_len(text, -1), keyword) != NULL ){ // the g_strstr_len brings the sub of a string and the text here is the text the function searches the keyword from . The -1 prints an error or is a parameter to print an error when there is one and searches through the entire string.
    printf("Keyword '%s' found on page %d\n", keyword, i + 1)
    };//the +1 here tells the program to start the index from 1 instead of 1 so it returns the page number and the keyword found there.
-   return 0;
+   return 0;// would free the resources 
 }
 }
 
