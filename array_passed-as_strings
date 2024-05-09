@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+void add_one(int array[], int length);//function declaration
+
+
+int main(void){
+    int a[]= {2,4,6,8,10,12,14};// array with name a with 7 elements
+    add_one(a, 7);// add_one function taking array a with 7 elements
+    for ( int i = 0; i < 7; i++){//for loop to print each individual member with the index
+        printf("a[%d]=%d\n", i ,a[i]);//array with format specifier[%d] =(assigned to) index number on new lines . The i is index identfier .
+    }
+}
+
+void add_one(int array[], int length){
+    for (int i = 0; i < length; i++)array[i] += 1;
+}
