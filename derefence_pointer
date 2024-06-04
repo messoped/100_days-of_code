@@ -1,0 +1,21 @@
+// dereferencing pointers calling a function
+#include <stdio.h>
+
+void add_one(int *a , int *b, int *c);// declaring a function
+
+int main(void) {
+    // Write C code here
+    int a=2,b= 4,c = 6;
+    add_one(&a, &b, &c);// &a, &b ,&c are the address of the integer variables 
+    printf("a:%d\n",a);
+    printf("b:%d\n",b);
+    printf("c:%d\n",c);
+
+    return 0;
+}
+
+void add_one(int *a , int *b, int *c){// this function would derefence a pointer and take the value of the pointer and 1 to it when the add_onefunction is called.
+    *a = *a + 1;
+    *b = *b + 1;
+    *c = *c + 1;
+}
